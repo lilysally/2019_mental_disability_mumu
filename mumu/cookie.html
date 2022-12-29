@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/operation.css" />
+  </head>
+  <body>
+    <div id="bg">
+      <img src="images/bg1.jpg" />
+    </div>
+    <div class="container">
+      <div class="header-number">
+        <p id="gui1"></p>
+        <p id="gui2"></p>
+      </div>
+      <div class="content-png">
+        <p id="demo1"></p>
+        <p id="connectdemo"></p>
+        <p id="demo2"></p>
+        <p id="adddemo"></p>
+      </div>
+      <div class="home-page">
+        <!-- <p>計算餅乾數量遊戲</p> -->
+        <div class="text-center gamesMain">
+          <button class="btn_ btnStart" id="gamesStart">
+            開始遊戲
+          </button>
+          <button
+            class="btn_ btnRules"
+            id="gameRules"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            遊戲規則
+          </button>
+          <!-- Button trigger modal -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  請計算兩邊餅乾數量後，以<span style="color:red;">點擊</span
+                  >的方式，來選擇答案。
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    關閉
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--看完遊戲規則按鈕後，出現的關閉按鈕-->
+        </div>
+      </div>
+      <div class="footer-choose">
+        <div class="row justify-content-around">
+          <div id="choose1"></div>
+          <div id="choose2"></div>
+          <div id="choose3"></div>
+        </div>
+        <div class="nextbutton btn btn-danger">下一關</div>
+        <!--下一關按鈕-->
+      </div>
+      <div class="ending">
+        <div class="again btn btn-danger">
+          再玩一次
+        </div>
+        <!--回首頁按鈕-->
+        <div class="leave btn btn-warning text-white">
+          <a class=" text-white" href="index.html">回首頁</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/operation2.js"></script>
+  </body>
+</html>

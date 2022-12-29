@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!---jsPlumb-->
+    <script src="js/jsplumb.js"></script>
+    <title>水果連連看遊戲</title>
+    <link rel="stylesheet" href="css/connect.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row fruitimg">
+        <div class="col-md-6 col-lg-6">
+          <img id="img1"></img>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div id="item_left"class="item1"></div>
+          <!-- 簡單 -->
+          <div id="item_left1"></div>
+          <div id="item_left2"></div>
+          <div id="item_left3"></div>
+          <!-- 中等 -->
+          <div id="item_left4"></div>
+          <div id="item_left5"></div>
+          <div id="item_left6"></div>
+          <div id="item_left7"></div>
+          <div id="item_left8"></div>
+          <!-- 困難 -->
+        </div>
+      </div>
+      <div class="row relativedot">
+        <div class="col-md-6 col-lg-6">
+          <p id="dot1" class="item2"></p>
+          <!-- 簡單 -->
+          <p id="dot2"></p>
+          <p id="dot3"></p>
+          <p id="dot4"></p>
+          <!-- 中等 -->
+          <p id="dot5"></p>
+          <p id="dot6"></p>
+          <p id="dot7"></p>
+          <p id="dot8"></p>
+          <p id="dot9"></p>
+          <!-- 困難 -->
+        </div>
+      </div>
+      <div class="row home-page">
+        <div class="text-center">
+          <button class="btn_ btn-danger btnStart" id="gamesStart">
+            開始遊戲
+          </button>
+          <button
+            class="btn_ btn-success btnRules"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            遊戲規則
+          </button>
+          <!-- Button trigger modal -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  請在水果下的黑色點點，<span
+                    style="color:red;"
+                    >點擊後拖曳</span
+                  >，來進行連線
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    關閉
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--看完遊戲規則按鈕後，出現的關閉按鈕-->
+        </div>
+      </div>
+      <div class="row footer-choose">
+        <div class="col-md-6 col-lg-6 align-self-center">
+          <div id="choose1" class="text-center" ></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="nextbutton btn btn-danger">下一關</div>
+          <!--下一關按鈕-->
+        </div>
+      </div>
+      <div class="row ending">
+        <div class="col-md-6 col-lg-6">
+          <div class="again btn btn-danger">
+            再玩一次
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="leave btn btn-warning text-white">
+                <a class=" text-white" href="index.html">回首頁</a>
+            </div>
+          </div>
+        </div>
+        <!--再玩一次按鈕-->
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/connect.js"></script>
+  </body>
+</html>

@@ -1,0 +1,498 @@
+* {
+  margin: 0px;
+  padding: 0 px;
+}
+html {
+  height: 100%;
+}
+body {
+  background-image: url(../images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/* .home-page {
+  vertical-align: middle;
+  margin-top: 35vh;
+  margin: auto;
+} */
+.gamesMain {
+  margin-top: 35vh;
+}
+.btn_ {
+  border: 0;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.btnStart {
+  background-color: rgb(240, 87, 87);
+}
+.btnStart:hover {
+  background-color: rgb(240, 64, 64);
+}
+.btnStart:active {
+  background-color: rgb(240, 64, 64);
+}
+.btnRules {
+  background-color: rgb(77, 233, 116);
+}
+.btnRules:hover {
+  background-color: rgb(38, 231, 86);
+}
+.btnRules:active {
+  background-color: rgb(77, 233, 116);
+}
+/*xs 直向手機*/
+@media screen and (max-width: 575px) {
+  .btn-danger {
+    position: fixed;
+    width: 30%;
+    bottom: 30%;
+    right: 55%;
+  }
+  .btn-warning {
+    position: fixed;
+    width: 30%;
+    bottom: 30%;
+    right: 30%;
+  }
+  .btn-success {
+    position: fixed;
+    width: 30%;
+    bottom: 30%;
+    right: 25%;
+  }
+  .nextbutton {
+    position: fixed;
+    left: 40%;
+    bottom: 10%;
+    width: 30%;
+    display: none;
+    text-align: center;
+  }
+  #img1 {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+  }
+  #choose1 {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 10%;
+    font-size: 30px;
+  }
+  #item_left {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot1 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left1 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot2 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left2 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot3 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left3 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot4 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left4 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot5 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*sm橫向手機*/
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .btn-danger {
+    width: 20%;
+    position: fixed;
+    bottom: 30%;
+    right: 60%;
+  }
+  .btn-warning {
+    width: 20%;
+    position: fixed;
+    bottom: 30%;
+    right: 35%;
+  }
+  .btn-success {
+    width: 20%;
+    position: fixed;
+    bottom: 30%;
+    right: 30%;
+  }
+  .nextbutton {
+    position: fixed;
+    left: 48%;
+    bottom: 10%;
+    width: 20%;
+    display: none;
+    text-align: center;
+  }
+  #img1 {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+  }
+  #choose1 {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 15%;
+    font-size: 35px;
+  }
+  #item_left {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot1 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left1 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot2 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left2 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot3 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left3 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot4 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left4 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot5 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*md 平板*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btn-danger {
+    position: fixed;
+    width: 20%;
+    font-size: 30px;
+    bottom: 30%;
+    right: 55%;
+  }
+  .btn-warning {
+    position: fixed;
+    width: 20%;
+    font-size: 30px;
+    bottom: 30%;
+    right: 30%;
+  }
+  .btn-success {
+    position: fixed;
+    width: 20%;
+    font-size: 30px;
+    bottom: 30%;
+    right: 25%;
+  }
+  .nextbutton {
+    position: fixed;
+    left: 48%;
+    bottom: 10%;
+    width: 20%;
+    display: none;
+    text-align: center;
+  }
+  #img1 {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+  }
+  #choose1 {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 75px;
+  }
+  #item_left {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot1 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left1 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot2 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left2 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot3 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left3 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot4 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left4 {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot5 {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* lg 桌機*/
+
+@media screen and (min-width: 992px) {
+  .btn-danger {
+    position: fixed;
+    width: 250px;
+    font-size: 60px;
+    bottom: 30%;
+    right: 58%;
+  }
+  .btn-warning {
+    position: fixed;
+    width: 250px;
+    font-size: 60px;
+    bottom: 30%;
+    right: 33%;
+  }
+  .btn-success {
+    position: fixed;
+    width: 250px;
+    font-size: 60px;
+    bottom: 30%;
+    right: 32%;
+  }
+  .nextbutton {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    width: 280px;
+    display: none;
+    text-align: center;
+  }
+  #img1 {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+  }
+  #choose1 {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+  }
+  #item_left {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot1 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left1 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot2 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left2 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot3 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left3 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot4 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left4 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #dot5 {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #item_left5 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
